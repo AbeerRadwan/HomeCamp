@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:videoId="3TnzujXQ1PU"
+        app:autoPlay="true"
+        app:showFullScreenButton="true" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_below="@id/youtube_player_view"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/girl"
+        />
+    <TextView
+        android:layout_below="@id/youtube_player_view"
+        android:layout_marginTop="16dp"
+        android:id="@+id/name"
+        android:layout_marginStart="8dp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Afnan"
+        />
+    <LinearLayout
+        android:layout_below="@id/name"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/image"
+        android:background="@drawable/leftbubblechat"
+        >
+        <TextView
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Can you repeat this point please ?"
+            />
+    </LinearLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_below="@id/image"
+        android:id="@+id/image2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/boy"
+        />
+    <TextView
+        android:layout_below="@id/image"
+        android:layout_marginTop="16dp"
+        android:id="@+id/name2"
+        android:layout_marginStart="8dp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/image2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mohammad"
+        />
+    <LinearLayout
+        android:layout_below="@id/name2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/image"
+        android:background="@drawable/leftbubblechat"
+        >
+        <TextView
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yes please"
+            />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_below="@id/image2"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rightbubblechat"
+        >
+        <TextView
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yes me too"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/AssessmentButton"
+        android:layout_margin="8dp"
+        android:text="Send Assessment"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/buttonbg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+</RelativeLayout>

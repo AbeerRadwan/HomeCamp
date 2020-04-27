@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Details:"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:textSize="18dp"
+        android:id="@+id/details2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details"
+        android:layout_margin="16dp"
+        android:text="Hello Dear Participants ..\n Can You Please Send Me A picture Of Your Drawing.\n\nThank You"
+        />
+
+    <View
+        android:background="@color/colorGrey"
+        android:id="@+id/v1"
+        android:layout_below="@id/details2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        />
+
+    <ImageView
+        android:id="@+id/cameraIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_camera_alt_black_24dp"
+        android:background="@color/colorWhite"
+        android:layout_below="@id/v1"
+        android:layout_margin="16dp"
+        />
+
+    <EditText
+        android:id="@+id/SelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/cameraIcon"
+        android:layout_below="@id/v1"
+        android:background="@drawable/edittextbgpurple"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:hint="Select Image"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:editable="false"
+        />
+
+
+    <View
+        android:background="@color/colorGrey"
+        android:id="@+id/v2"
+        android:layout_below="@id/cameraIcon"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        />
+
+    <ImageView
+        android:id="@+id/micIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_mic_black_24dp"
+        android:background="@color/colorWhite"
+        android:layout_below="@id/v2"
+        android:layout_margin="16dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/cameraIcon"
+        android:layout_below="@id/v2"
+        android:background="@drawable/edittextbgpurple"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:hint="Send Voicenote"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:editable="false"
+        />
+
+    <View
+        android:background="@color/colorGrey"
+        android:id="@+id/v3"
+        android:layout_below="@id/micIcon"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        />
+    <EditText
+        android:id="@+id/notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:layout_below="@id/v3"
+        android:background="@drawable/edittextbgpurple"
+        android:layout_margin="16dp"
+        android:hint="Notes .."
+        android:padding="4dp"
+        android:gravity="top"
+
+        />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonbg"
+        android:layout_margin="16dp"
+        android:text="Send"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

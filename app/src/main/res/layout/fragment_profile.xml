@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:id="@+id/profile_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/kid"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#ffffff"/>
+
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ahmad Ali"
+            android:layout_below="@id/profile_image"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textColor="@color/colorRed"
+            />
+
+        <TextView
+            android:id="@+id/profile_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 yr"
+            android:layout_below="@id/profileName"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textColor="@color/colorLightRed"
+            />
+
+
+        <View
+            android:id="@+id/v1"
+            android:layout_below="@id/profile_age"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey"
+
+            />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_below="@id/v1"
+            android:text="Teachers"
+            android:textSize="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_people_black_24dp"
+            />
+
+        <View
+            android:id="@+id/v2"
+            android:layout_below="@id/txt1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey"
+
+            />
+
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_below="@id/v2"
+            android:text="Courses"
+            android:textSize="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_library_books_black_24dp"
+            />
+
+        <View
+            android:id="@+id/v3"
+            android:layout_below="@id/txt2"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey"
+
+            />
+
+</RelativeLayout>

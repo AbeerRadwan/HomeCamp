@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Science"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Graded"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorPurple"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/grade1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:text="10 / 10"
+        android:textSize="20sp"
+        android:layout_marginEnd="16dp"
+        />
+
+    <View
+        android:id="@+id/v1"
+        android:layout_below="@id/grade1"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey"
+
+        />
+
+
+
+
+    <TextView
+        android:layout_below="@id/v1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Art"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_below="@id/v1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Processing"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorGreen"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:layout_below="@id/v1"
+        android:id="@+id/grade2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:text="- / 10"
+        android:textSize="20sp"
+        android:layout_marginEnd="16dp"
+        />
+
+    <View
+        android:id="@+id/v2"
+        android:layout_below="@id/grade2"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey"
+
+        />
+
+
+    <TextView
+        android:layout_below="@id/v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quraan"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_below="@id/v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="new"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:layout_below="@id/v2"
+        android:id="@+id/grade3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:text="- / 10"
+        android:textSize="20sp"
+        android:layout_marginEnd="16dp"
+        />
+
+    <View
+        android:id="@+id/v3"
+        android:layout_below="@id/grade3"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey"
+
+        />
+
+</RelativeLayout>

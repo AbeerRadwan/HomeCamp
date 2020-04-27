@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:videoId="3kvQfRyZ53o"
+        app:autoPlay="true"
+        app:showFullScreenButton="true" />
+
+    <ListView
+        android:layout_below="@id/youtube_player_view"
+        android:layout_width="match_parent"
+        android:id="@+id/messages_view"
+        android:layout_weight="2"
+        android:layout_above="@id/edittext_layout"
+        android:divider="#fff"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:id="@+id/edittext_layout"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextbg"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:padding="8dp"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="4dp"
+            android:hint="Write a message"
+            android:inputType="text"
+            android:text="" />
+
+        <ImageButton
+            android:id="@+id/SendTextButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:padding="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/ic_send_black_24dp"
+
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
